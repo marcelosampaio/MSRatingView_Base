@@ -11,10 +11,13 @@ struct MainView: View {
     @State var currentRating = 0
     var body: some View {
         VStack {
+            
             RatingView(maxRating: 5,
-                     currentRating: $currentRating,
-                     color: .red,
-                      ratingImage: .thumbsUp)
+                       currentRating: $currentRating,
+                       width: 60,
+                       color: .red,
+                       ratingImage: .star)
+            
             if currentRating == 0 {
                 Text("Please, give us your feedback.")
             }else if currentRating == 1 {
