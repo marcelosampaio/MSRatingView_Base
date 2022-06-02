@@ -15,7 +15,7 @@ struct MainView: View {
             RatingView(maxRating: 5,
                        currentRating: $currentRating,
                        width: 60,
-                       color: .red,
+                       color: .orange,
                        ratingImage: .star)
             
             if currentRating == 0 {
