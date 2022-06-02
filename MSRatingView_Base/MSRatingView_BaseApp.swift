@@ -11,7 +11,7 @@ import SwiftUI
 struct MSRatingView_BaseApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
         }
     }
 }
