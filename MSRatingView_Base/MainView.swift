@@ -6,17 +6,14 @@
 //
 
 import SwiftUI
+import MSRatingVIew
 
 struct MainView: View {
     @State var currentRating = 0
     var body: some View {
         VStack {
 
-            RatingView(maxRating: 5,
-                       currentRating: $currentRating,
-                       width: 60,
-                       color: .orange,
-                       ratingImage: .star)
+            RatingView(maxRating: 5, currentRating: $currentRating, width: 40, color: .orange, ratingImage: .star)
 
             if currentRating == 0 {
                 Text("Please, give us your feedback.")
