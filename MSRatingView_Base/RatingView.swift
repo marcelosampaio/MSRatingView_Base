@@ -12,7 +12,7 @@ struct RatingView: View {
     @Binding var currentRating: Int
     var width:Int = 20
     var color: UIColor = .systemYellow
-    var ratiwatingImage = .star
+    var ratingImage: RatingImage = .star
 
     var body: some View {
         HStack {
